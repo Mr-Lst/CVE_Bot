@@ -5,7 +5,7 @@ import time
 from datetime import datetime, timezone, timedelta
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv("webhook-key.env")
 DISCORD_WEBHOOK = os.getenv("DISCORD_WEBHOOK")
 NVD_API_KEY = os.getenv("NVD_API_KEY")
 SENT_CVES_FILE = "sent_cves.json"
